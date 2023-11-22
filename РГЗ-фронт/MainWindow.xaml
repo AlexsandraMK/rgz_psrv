@@ -1,0 +1,111 @@
+﻿<Window x:Class="РГЗ_фронт.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Фотогалерея" MaxHeight="900" MinHeight="900" MaxWidth="1200" MinWidth="1200">
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#85004B"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Background" Value="#E6B2D6"/>
+            <Setter Property="Foreground" Value="#85004B"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="Title" TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Margin" Value="20"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="#85004B"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Background" Value="#E6B2D6"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="Margin" Value="15"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                <DropShadowEffect BlurRadius="15" ShadowDepth="0"/>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#85004B"/>
+                    <Setter Property="Foreground" Value="#E6B2D6"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style x:Key="Help" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+        </Style>
+        <Style TargetType="ListBox">
+            <Setter Property="Margin" Value="0 10"/>
+            <Setter Property="ItemContainerStyle">
+                <Setter.Value>
+                    <Style>
+                        <Setter Property="ListBoxItem.Width" Value="300"/>
+                        <Setter Property="ListBoxItem.Height" Value="300"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="3"/>
+                </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock Style="{StaticResource Title}">Фотогалерея</TextBlock>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Column="0" HorizontalAlignment="Right" Margin="20">Путь к папке с фотографиями:</TextBlock>
+                <TextBox Grid.Column="1" HorizontalAlignment="Left" x:Name="Path"></TextBox>
+            </Grid>
+            <Button Height="50" Click="GetPhotos_Click" Content="Получить картинки из папки">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="25"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </StackPanel>
+        <Grid Grid.Row="1" Height="625" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="1000"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <ListBox x:Name="ViewerPhotos" Grid.Column="1"/>
+        </Grid>
+    </Grid>
+</Window>
