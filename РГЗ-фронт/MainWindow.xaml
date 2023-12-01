@@ -4,59 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Фотогалерея" MaxHeight="900" MinHeight="900" MaxWidth="1200" MinWidth="1200">
+        Title="Фотогалерея" MaxHeight="900" MinHeight="900"  MinWidth="1200"
+        WindowStartupLocation="CenterOwner"
+        Closed="CloseWindow">
     <Window.Resources>
-        <Style TargetType="TextBlock">
-            <Setter Property="Foreground" Value="#85004B"/>
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-        </Style>
-        <Style TargetType="TextBox">
-            <Setter Property="Width" Value="300"/>
-            <Setter Property="Padding" Value="5"/>
-            <Setter Property="Background" Value="#E6B2D6"/>
-            <Setter Property="Foreground" Value="#85004B"/>
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-        </Style>
-        <Style x:Key="Title" TargetType="TextBlock" BasedOn="{StaticResource {x:Type TextBlock}}">
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="FontSize" Value="25"/>
-            <Setter Property="Margin" Value="20"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-        </Style>
-        <Style TargetType="Button">
-            <Setter Property="Foreground" Value="#85004B"/>
-            <Setter Property="FontSize" Value="16"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="Background" Value="#E6B2D6"/>
-            <Setter Property="Padding" Value="5"/>
-            <Setter Property="Margin" Value="15"/>
-            <Setter Property="Width" Value="300"/>
-            <Setter Property="Effect">
-                <Setter.Value>
-                <DropShadowEffect BlurRadius="15" ShadowDepth="0"/>
-                </Setter.Value>
-            </Setter>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="{x:Type Button}">
-                        <Border Background="{TemplateBinding Background}" BorderBrush="Black" BorderThickness="1">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#85004B"/>
-                    <Setter Property="Foreground" Value="#E6B2D6"/>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-        <Style x:Key="Help" TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
-        </Style>
-        <Style TargetType="ListBox">
+        
+        <Style TargetType="ListBox" x:Key="ManyPhotos">
             <Setter Property="Margin" Value="0 10"/>
             <Setter Property="ItemContainerStyle">
                 <Setter.Value>
@@ -69,29 +22,76 @@
 
             <Setter Property="ItemsPanel">
                 <Setter.Value>
-                <ItemsPanelTemplate>
-                    <UniformGrid Columns="3"/>
-                </ItemsPanelTemplate>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Columns="2"/>
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="ListBox" x:Key="OnePhoto">
+            <Setter Property="Margin" Value="0 10"/>
+            <Setter Property="ItemContainerStyle">
+                <Setter.Value>
+                    <Style>
+                        <Setter Property="ListBoxItem.Width" Value="600"/>
+                        <Setter Property="ListBoxItem.Height" Value="600"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="ListBox" x:Key="DirectoryListBox">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="ItemContainerStyle">
+                <Setter.Value>
+                    <Style>
+                        <Setter Property="ListBoxItem.Foreground" Value="#85004B"/>
+                        <Setter Property="ListBoxItem.FontSize" Value="16"/>
+                    </Style>
                 </Setter.Value>
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0">
-            <TextBlock Style="{StaticResource Title}">Фотогалерея</TextBlock>
-            <Grid>
+
+
+    <DockPanel>
+        <TextBlock Style="{StaticResource TitleH1}" DockPanel.Dock="Top">Фотогалерея</TextBlock>
+        <Grid DockPanel.Dock="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="500"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0">
+                <TextBlock Style="{StaticResource TitleH2}">Навигатор</TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource TexBlock}" Margin="20">Текущая папка:</TextBlock>
+                    <TextBox x:Name="Path" IsReadOnly="True"></TextBox>
+                </StackPanel>
+                <ListBox x:Name="ViewerDirectory" Style="{StaticResource DirectoryListBox}" SelectionChanged="ViewerDirectory_SelectionChanged" MouseDoubleClick="ViewerDirectory_MouseDoubleClick"/>
+                <Button Height="50" Click="GetPhotos_Click" Content="Получить картинки из папки">
+                    <Button.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="25"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <TextBlock Style="{StaticResource TitleH2}">Фотографии</TextBlock>
+                <TextBlock x:Name="TempFilePhotoVewing" Style="{StaticResource TitleH2}"></TextBlock>
+                <Grid Height="625" VerticalAlignment="Top">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="700"></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <TextBlock Grid.Column="0" HorizontalAlignment="Right" Margin="20">Путь к папке с фотографиями:</TextBlock>
-                <TextBox Grid.Column="1" HorizontalAlignment="Left" x:Name="Path"></TextBox>
+                    <ListBox x:Name="ViewerPhotos" Style="{StaticResource ManyPhotos}" Grid.Column="1" />
             </Grid>
-            <Button Height="50" Click="GetPhotos_Click" Content="Получить картинки из папки">
+            </StackPanel>
+        </Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" DockPanel.Dock="Bottom">
+
+            <Button Height="50" Click="GoReturn"  Content="Вернуться в главное меню">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="25"/>
@@ -99,13 +99,5 @@
                 </Button.Resources>
             </Button>
         </StackPanel>
-        <Grid Grid.Row="1" Height="625" VerticalAlignment="Top">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition Width="1000"></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
-            </Grid.ColumnDefinitions>
-            <ListBox x:Name="ViewerPhotos" Grid.Column="1"/>
-        </Grid>
-    </Grid>
+    </DockPanel>
 </Window>
