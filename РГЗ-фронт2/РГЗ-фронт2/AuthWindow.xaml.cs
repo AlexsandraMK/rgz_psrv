@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace РГЗ_фронт
+namespace РГЗ_фронт2
 {
     /// <summary>
     /// Логика взаимодействия для AuthWindow.xaml

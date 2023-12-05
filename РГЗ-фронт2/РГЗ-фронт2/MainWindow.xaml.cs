@@ -5,7 +5,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
 
-namespace РГЗ_фронт
+namespace РГЗ_фронт2
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -39,8 +39,7 @@ namespace РГЗ_фронт
         public MainWindow()
         {
             InitializeComponent();
-            Path.Text = "/photoBase";
-
+            Path.Text = "/photoBase";   // TODO: IRA pwd
             string[] filesFromServer = { "directory1", "file1.jpg" }; // TODO: IRA ls temp directory
 
             files = new ObservableCollection<string>(filesFromServer);
@@ -58,8 +57,8 @@ namespace РГЗ_фронт
                 // Получение фотографий с сервера
                 string path = "./" + selectedItem;    // Относительный путь к папке с фотографиями или к фотографии
 
-                string pwd = "";// TODO: IRA pwd
-                pwd = pwd.Trim(new char[] { '.' }) + "/"; // результат "/photoBase/dir/"
+                string pwd = ""; // TODO: IRA pwd
+                pwd = pwd + "/"; // результат "/photoBase/dir/"
 
                 string[] base64Strings;
                 if (selectedItem.Contains(".")) // Если имеет расширение -> файл
@@ -116,7 +115,6 @@ namespace РГЗ_фронт
 
                 // TODO: IRA cd directoryToGo
                 string pwd = ""; // TODO: IRA pwd
-                pwd = pwd.Trim(new char[] { '.' });
 
                 if (!pwd.Equals("/photoBase"))
                 {

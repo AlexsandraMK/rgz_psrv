@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace РГЗ_фронт
+namespace РГЗ_фронт2
 {
     /// <summary>
     /// Interaction logic for App.xaml

@@ -1,18 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
-namespace РГЗ_фронт
+namespace РГЗ_фронт2
 {
     /// <summary>
     /// Логика взаимодействия для Window1.xaml
@@ -77,7 +66,11 @@ namespace РГЗ_фронт
 
         private void GoHelp(Object sender, EventArgs e)
         {
-            
+            Help window = new Help
+            {
+                Owner = this
+            };
+            window.ShowDialog();
         }
 
         private void GoExit(Object sender, EventArgs e)
