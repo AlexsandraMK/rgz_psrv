@@ -1,0 +1,67 @@
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\bin\Debug\РГЗ-фронт2.exe.config
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\bin\Debug\РГЗ-фронт2.exe
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\bin\Debug\РГЗ-фронт2.pdb
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.csproj.AssemblyReference.cache
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MainWindow.baml
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\AuthWindow.g.cs
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MainWindow.g.cs
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MenuWindow.g.cs
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\SettingsComPortWindow.g.cs
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\App.g.cs
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2_MarkupCompile.cache
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2_MarkupCompile.lref
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\App.baml
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\AuthWindow.baml
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MenuWindow.baml
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\SettingsComPortWindow.baml
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.g.resources
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ_фронт2.Properties.Resources.resources
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.csproj.GenerateResource.cache
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.csproj.CoreCompileInputs.cache
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.exe
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\rgz_psrv\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.pdb
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\bin\Debug\РГЗ-фронт2.exe.config
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\bin\Debug\РГЗ-фронт2.exe
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\bin\Debug\РГЗ-фронт2.pdb
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.csproj.AssemblyReference.cache
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.csproj.SuggestedBindingRedirects.cache
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MainWindow.baml
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\AuthWindow.g.cs
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MainWindow.g.cs
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MenuWindow.g.cs
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\SettingsComPortWindow.g.cs
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\App.g.cs
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2_MarkupCompile.cache
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2_MarkupCompile.lref
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\App.baml
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\AuthWindow.baml
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MenuWindow.baml
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\SettingsComPortWindow.baml
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.g.resources
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ_фронт2.Properties.Resources.resources
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.csproj.GenerateResource.cache
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.csproj.CoreCompileInputs.cache
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.exe
+C:\Users\bortn\Desktop\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.pdb
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\bin\Debug\РГЗ-фронт2.exe.config
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\bin\Debug\РГЗ-фронт2.exe
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\bin\Debug\РГЗ-фронт2.pdb
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.csproj.AssemblyReference.cache
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MainWindow.baml
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\AuthWindow.g.cs
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MainWindow.g.cs
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MenuWindow.g.cs
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\SettingsComPortWindow.g.cs
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\App.g.cs
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2_MarkupCompile.cache
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2_MarkupCompile.lref
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\App.baml
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\AuthWindow.baml
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\MenuWindow.baml
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\SettingsComPortWindow.baml
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.g.resources
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ_фронт2.Properties.Resources.resources
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.csproj.GenerateResource.cache
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.csproj.CoreCompileInputs.cache
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.exe
+D:\Ира\hdd\НГТУ\11 семак мага\ПСРВ\ргз\РГЗ-фронт2\РГЗ-фронт2\РГЗ-фронт2\obj\Debug\РГЗ-фронт2.pdb
