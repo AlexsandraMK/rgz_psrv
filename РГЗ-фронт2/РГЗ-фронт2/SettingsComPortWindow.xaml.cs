@@ -1,7 +1,6 @@
-﻿using System;
-using System.Windows;
+﻿using System.Windows;
 
-namespace РГЗ_фронт2
+namespace РГЗ_фронт
 {
     /// <summary>
     /// Логика взаимодействия для SettingsComPortWindow.xaml
@@ -18,9 +17,12 @@ namespace РГЗ_фронт2
             try
             {
                 string name = Name.Text;
-                int baudRate = Convert.ToInt32(BaudRate.Text);
+                string baudRate = BaudRate.Text;
 
-                // TODO: Ira connect
+                Client.SetPortName(name);
+                Client.SetPortBaudRate(baudRate);
+                Client.OpenPort();
+                Client.FormMessage("hello", null);
 
                 ((this.Owner) as CustomMenuWindow).isConnect = true;
                 this.Close();

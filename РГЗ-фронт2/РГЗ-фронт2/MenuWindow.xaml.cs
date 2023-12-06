@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 
-namespace РГЗ_фронт2
+namespace РГЗ_фронт
 {
     /// <summary>
     /// Логика взаимодействия для Window1.xaml
@@ -15,6 +15,7 @@ namespace РГЗ_фронт2
         public CustomMenuWindow()
         {
             InitializeComponent();
+            Client.CreatePort();
         }
 
         private void GoAuth(Object sender, EventArgs e)
@@ -75,6 +76,7 @@ namespace РГЗ_фронт2
 
         private void GoExit(Object sender, EventArgs e)
         {
+            Client.ClosePort();
             this.Close();
         }
     }

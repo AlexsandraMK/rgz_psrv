@@ -1,6 +1,7 @@
 ﻿using System.Windows;
+using MessageBox = System.Windows.Forms.MessageBox;
 
-namespace РГЗ_фронт2
+namespace РГЗ_фронт
 {
     /// <summary>
     /// Логика взаимодействия для AuthWindow.xaml
@@ -19,7 +20,7 @@ namespace РГЗ_фронт2
                 string login = Login.Text;
                 string password = Password.Text;
 
-                // TODO: Ira auth
+                Client.FormMessage("auth", login + " " + password);
 
                 ((this.Owner) as CustomMenuWindow).isAuth = true;
                 this.Close();
@@ -27,6 +28,7 @@ namespace РГЗ_фронт2
             catch
             {
                 ((this.Owner) as CustomMenuWindow).isAuth = false;
+                MessageBox.Show("Произошла ошибка");
             }
 
         }
